@@ -1,91 +1,70 @@
-/* =========================================================
-   Mundo Academy — script.js
-   ========================================================= */
+/* Mundo Academy — script.js — Mundo Ejecutivo */
 
-// ── Navbar scroll effect ──────────────────────────────────
+// ── Navbar scroll ─────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
 }, { passive: true });
 
-// ── Hamburger menu ────────────────────────────────────────
+// ── Hamburger ─────────────────────────────────────────────
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
-
 hamburger.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded', open);
-  const spans = hamburger.querySelectorAll('span');
+  const [s1, s2, s3] = hamburger.querySelectorAll('span');
   if (open) {
-    spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-    spans[1].style.opacity   = '0';
-    spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    s1.style.transform = 'translateY(7px) rotate(45deg)';
+    s2.style.opacity   = '0';
+    s3.style.transform = 'translateY(-7px) rotate(-45deg)';
   } else {
-    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+    [s1,s2,s3].forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   }
 });
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  hamburger.querySelectorAll('span').forEach(s => { s.style.transform=''; s.style.opacity=''; });
+}));
 
-// close on nav link click
-navLinks.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-  });
-});
-
-// ── Particle canvas ───────────────────────────────────────
+// ── Particles (gold palette) ──────────────────────────────
 (function initParticles() {
   const canvas = document.getElementById('particles');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-
-  function resize() {
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
+  function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
   resize();
   window.addEventListener('resize', resize, { passive: true });
 
-  const COUNT  = 60;
-  const COLORS = ['rgba(108,60,225,', 'rgba(236,72,153,', 'rgba(249,115,22,', 'rgba(59,130,246,'];
-
-  const particles = Array.from({ length: COUNT }, () => ({
+  const pts = Array.from({ length: 55 }, () => ({
     x:  Math.random() * canvas.width,
     y:  Math.random() * canvas.height,
-    vx: (Math.random() - 0.5) * 0.4,
-    vy: (Math.random() - 0.5) * 0.4,
-    r:  Math.random() * 2 + 0.5,
-    color: COLORS[Math.floor(Math.random() * COLORS.length)],
-    alpha: Math.random() * 0.4 + 0.1,
+    vx: (Math.random() - 0.5) * 0.35,
+    vy: (Math.random() - 0.5) * 0.35,
+    r:  Math.random() * 1.5 + 0.5,
+    a:  Math.random() * 0.35 + 0.05,
   }));
 
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      p.x += p.vx;
-      p.y += p.vy;
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
       if (p.x < 0) p.x = canvas.width;
       if (p.x > canvas.width) p.x = 0;
       if (p.y < 0) p.y = canvas.height;
       if (p.y > canvas.height) p.y = 0;
-
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = p.color + p.alpha + ')';
+      ctx.fillStyle = `rgba(201,160,40,${p.a})`;
       ctx.fill();
     });
-
-    // draw connections
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 120) {
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 110) {
           ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(108,60,225,${0.06 * (1 - dist / 120)})`;
+          ctx.moveTo(pts[i].x, pts[i].y);
+          ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.strokeStyle = `rgba(201,160,40,${0.05*(1-d/110)})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         }
@@ -99,124 +78,105 @@ navLinks.querySelectorAll('a').forEach(a => {
 // ── Counter animation ─────────────────────────────────────
 function animateCounter(el, target, duration) {
   const start = performance.now();
-  function update(now) {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    // ease-out cubic
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = Math.floor(eased * target);
-    el.textContent = current >= 1000
-      ? (current / 1000).toFixed(1).replace('.0', '') + 'k'
-      : current.toString();
-    if (progress < 1) requestAnimationFrame(update);
-    else el.textContent = target >= 1000
-      ? (target / 1000).toFixed(1).replace('.0', '') + 'k'
-      : target.toString();
+  function tick(now) {
+    const p = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    const val = Math.floor(eased * target);
+    el.textContent = val >= 1000 ? (val/1000).toFixed(val%1000===0?0:1)+'k' : val;
+    if (p < 1) requestAnimationFrame(tick);
+    else el.textContent = target >= 1000 ? (target/1000).toFixed(target%1000===0?0:1)+'k' : target;
   }
-  requestAnimationFrame(update);
+  requestAnimationFrame(tick);
 }
 
 // ── Intersection Observer ─────────────────────────────────
-const io = new IntersectionObserver((entries) => {
+const io = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-
     const el = entry.target;
-
-    // reveal animation
     if (el.classList.contains('reveal')) {
-      const siblings = Array.from(el.parentElement.querySelectorAll('.reveal'));
-      const idx = siblings.indexOf(el);
-      el.style.transitionDelay = `${idx * 80}ms`;
+      const siblings = [...el.parentElement.querySelectorAll('.reveal')];
+      el.style.transitionDelay = `${siblings.indexOf(el) * 90}ms`;
       el.classList.add('visible');
     }
-
-    // counter
-    if (el.dataset.target) {
-      animateCounter(el, parseInt(el.dataset.target, 10), 1800);
-    }
-
+    if (el.dataset.target) animateCounter(el, parseInt(el.dataset.target), 1800);
     io.unobserve(el);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal, [data-target]').forEach(el => io.observe(el));
 
-// ── Course tabs filter ────────────────────────────────────
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
+// ── Countdown timer ───────────────────────────────────────
+function initCountdown() {
+  const KEY = 'ma_deadline';
+  let deadline = localStorage.getItem(KEY);
+  if (!deadline) {
+    deadline = Date.now() + 23 * 3600000 + 47 * 60000 + 12000;
+    localStorage.setItem(KEY, deadline);
+  }
+  function update() {
+    const diff = Math.max(0, deadline - Date.now());
+    const h = Math.floor(diff / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    const fmt = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    document.querySelectorAll('#countdown, #offerTimer').forEach(el => { if (el) el.textContent = fmt; });
+  }
+  update();
+  setInterval(update, 1000);
+}
+initCountdown();
 
-    const filter = tab.dataset.tab;
-    const cards  = document.querySelectorAll('.course-card');
-
-    cards.forEach((card, i) => {
-      const match = filter === 'all' || card.dataset.cat === filter;
-      card.style.transitionDelay = `${i * 50}ms`;
-      card.style.opacity    = match ? '1' : '0';
-      card.style.transform  = match ? 'scale(1)' : 'scale(0.95)';
-      card.style.pointerEvents = match ? '' : 'none';
-      card.style.display    = match ? '' : 'none';
-    });
-
-    // re-show after brief delay for transition
-    if (filter !== 'all') {
-      setTimeout(() => {
-        cards.forEach(card => {
-          if (card.dataset.cat !== filter) card.style.display = 'none';
-          else card.style.display = '';
-        });
-      }, 10);
+// ── Spots counter (fake scarcity) ─────────────────────────
+(function spotsCounter() {
+  const el = document.getElementById('spotsLeft');
+  if (!el) return;
+  let spots = parseInt(localStorage.getItem('ma_spots') || '14');
+  el.textContent = spots;
+  setInterval(() => {
+    if (spots > 4 && Math.random() < 0.08) {
+      spots--;
+      localStorage.setItem('ma_spots', spots);
+      el.textContent = spots;
+      el.style.color = spots <= 6 ? '#ef4444' : '';
     }
+  }, 18000);
+})();
+
+// ── FAQ accordion ─────────────────────────────────────────
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
   });
 });
 
-// ── Smooth category card colors ───────────────────────────
-document.querySelectorAll('.cat-card').forEach(card => {
-  const color = card.dataset.color;
-  if (color) card.style.setProperty('--card-color', color);
-});
-
-// ── Parallax orbs on mouse move ───────────────────────────
-document.addEventListener('mousemove', (e) => {
-  const x = (e.clientX / window.innerWidth  - 0.5) * 30;
-  const y = (e.clientY / window.innerHeight - 0.5) * 30;
-
-  document.querySelectorAll('.orb-1').forEach(el => {
-    el.style.transform = `translate(${x * 0.5}px, ${y * 0.5}px)`;
-  });
-  document.querySelectorAll('.orb-2').forEach(el => {
-    el.style.transform = `translate(${-x * 0.3}px, ${-y * 0.3}px)`;
-  });
-  document.querySelectorAll('.orb-3').forEach(el => {
-    el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-  });
+// ── Parallax orbs ─────────────────────────────────────────
+document.addEventListener('mousemove', e => {
+  const x = (e.clientX / window.innerWidth  - 0.5) * 25;
+  const y = (e.clientY / window.innerHeight - 0.5) * 25;
+  document.querySelectorAll('.orb-1').forEach(o => { o.style.transform = `translate(${x*.5}px,${y*.5}px)`; });
+  document.querySelectorAll('.orb-2').forEach(o => { o.style.transform = `translate(${-x*.3}px,${-y*.3}px)`; });
 }, { passive: true });
 
-// ── Active nav link on scroll ─────────────────────────────
-const sections  = document.querySelectorAll('section[id]');
-const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+// ── Tilt on cards ─────────────────────────────────────────
+document.querySelectorAll('.inc-card, .testi-card, .price-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width  - 0.5;
+    const y = (e.clientY - r.top)  / r.height - 0.5;
+    card.style.transform = `perspective(700px) rotateY(${x*5}deg) rotateX(${-y*5}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+});
 
+// ── Active nav highlight ──────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
-  });
-  navAnchors.forEach(a => {
-    a.style.color = a.getAttribute('href') === `#${current}` ? '#F8F9FA' : '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) current = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--gold-light)' : '';
   });
 }, { passive: true });
-
-// ── Tilt effect on course cards ───────────────────────────
-document.querySelectorAll('.course-card, .instructor-card').forEach(card => {
-  card.addEventListener('mousemove', (e) => {
-    const rect  = card.getBoundingClientRect();
-    const x     = (e.clientX - rect.left) / rect.width  - 0.5;
-    const y     = (e.clientY - rect.top)  / rect.height - 0.5;
-    card.style.transform = `perspective(800px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-6px)`;
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = '';
-  });
-});
