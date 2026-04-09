@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mundo Academy – Aprende sin límites</title>
-  <meta name="description" content="Más de 400 cursos online en México. Aprende a tu ritmo con los mejores instructores. Empieza hoy." />
+  <title>Mundo Academy – Formación Ejecutiva Online</title>
+  <meta name="description" content="La plataforma de formación ejecutiva líder en México. Cursos de negocios, liderazgo y tecnología con certificados que abren puertas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ░░ NAVBAR ░░ -->
+  <!-- NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="logo">
@@ -20,15 +20,13 @@
         <span class="logo-text">Mundo<strong>Academy</strong></span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#cursos">Cursos</a>
-        <a href="#categorias">Categorías</a>
-        <a href="#instructores">Instructores</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#precios">Precios</a>
+        <a href="#incluye">Qué incluye</a>
+        <a href="#testimonios">Casos de éxito</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#faq">FAQ</a>
       </nav>
       <div class="nav-actions">
-        <a href="#" class="btn-ghost">Iniciar sesión</a>
-        <a href="#" class="btn-primary">Comenzar gratis</a>
+        <a href="#oferta" class="btn-gold">Inscribirme ahora →</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -36,623 +34,213 @@
     </div>
   </header>
 
-  <!-- ░░ HERO ░░ -->
+  <!-- URGENCY BAR -->
+  <div class="urgency-bar">
+    <span class="ub-dot"></span>
+    <span>Oferta de lanzamiento activa — quedan <strong id="spotsLeft">14</strong> lugares a precio especial</span>
+    <span class="ub-sep">|</span>
+    <span>Cierra en <strong id="countdown">23:47:12</strong></span>
+  </div>
+
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg">
+    <canvas id="particles"></canvas>
+    <div class="hero-orbs">
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <canvas id="particles"></canvas>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        +400 cursos disponibles ahora mismo
-      </div>
-      <h1 class="hero-title">
-        Aprende lo que<br />
-        <span class="gradient-text">el mundo necesita</span><br />
-        hoy.
-      </h1>
-      <p class="hero-sub">
-        Plataforma de aprendizaje online en México. Cursos de tecnología,<br class="br-desktop" />
-        negocios, diseño y más — impartidos por expertos reales.
-      </p>
-      <div class="hero-actions">
-        <a href="#" class="btn-hero-primary">
-          Explorar cursos
-          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-        </a>
-        <a href="#" class="btn-hero-ghost">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          Ver demo
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num" data-target="42000">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Estudiantes activos</span>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Formación ejecutiva online · México
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="400">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Cursos disponibles</span>
+        <h1 class="hero-title">
+          Transforma tu carrera<br />
+          con formación de<br />
+          <em class="gold-italic">nivel ejecutivo.</em>
+        </h1>
+        <p class="hero-sub">
+          Más de 400 programas diseñados para profesionistas que quieren crecer, liderar y ganar más. Aprendizaje 100% online, certificado y a tu ritmo.
+        </p>
+        <div class="hero-cta-block">
+          <a href="#oferta" class="btn-hero-gold">
+            Quiero inscribirme ahora
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="#incluye" class="btn-outline-white">Ver qué incluye</a>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
-          <span class="stat-label">Tasa de satisfacción</span>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Sin contrato
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Acceso de por vida
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Garantía 7 días
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero-visual">
-      <div class="dashboard-card glass-card">
-        <div class="dc-header">
-          <div class="dc-avatar"></div>
+      <div class="hero-visual">
+        <div class="hero-card glass-gold">
+          <div class="hc-top">
+            <div class="hc-avatar"></div>
+            <div>
+              <div class="hc-name">Carlos Mendoza</div>
+              <div class="hc-role">Director Comercial · CDMX</div>
+            </div>
+            <div class="hc-badge">✓ Certificado</div>
+          </div>
+          <div class="hc-quote">"Subí mi sueldo 40% en 8 meses después de completar el programa de liderazgo."</div>
+          <div class="hc-stars">★★★★★</div>
+        </div>
+        <div class="hero-card-small glass-gold" style="top:10px;right:-24px">
+          <div class="hcs-icon">🏆</div>
           <div>
-            <div class="dc-name">María González</div>
-            <div class="dc-course">Desarrollo Web con React</div>
+            <div class="hcs-val">+42,000</div>
+            <div class="hcs-label">ejecutivos formados</div>
           </div>
-          <div class="dc-badge">En progreso</div>
         </div>
-        <div class="dc-progress-wrap">
-          <div class="dc-progress-bar">
-            <div class="dc-progress-fill" style="width:72%"></div>
+        <div class="hero-card-small glass-gold" style="bottom:30px;left:-20px">
+          <div class="hcs-icon">📈</div>
+          <div>
+            <div class="hcs-val">87%</div>
+            <div class="hcs-label">mejoran su posición</div>
           </div>
-          <span>72%</span>
         </div>
-        <div class="dc-modules">
-          <div class="module-item done"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Introducción a React</div>
-          <div class="module-item done"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Componentes y Props</div>
-          <div class="module-item active"><span class="active-dot"></span> Hooks avanzados</div>
-          <div class="module-item"><span class="lock-icon">🔒</span> Proyecto final</div>
-        </div>
-      </div>
-      <div class="floating-badge badge-cert glass-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5-2-1-1 2-2-9 9 3-2 1-1 2-2-5"/><circle cx="12" cy="8" r="6"/></svg>
-        <div>
-          <div class="fb-title">Certificado obtenido</div>
-          <div class="fb-sub">JavaScript Avanzado</div>
-        </div>
-      </div>
-      <div class="floating-badge badge-students glass-card">
-        <div class="avatars-stack">
-          <div class="mini-avatar" style="background:#6C3CE1"></div>
-          <div class="mini-avatar" style="background:#F97316"></div>
-          <div class="mini-avatar" style="background:#EC4899"></div>
-        </div>
-        <span>+240 estudiantes hoy</span>
       </div>
     </div>
   </section>
 
-  <!-- ░░ LOGOS STRIP ░░ -->
-  <section class="logos-strip">
-    <p class="logos-label">Empresas donde trabajan nuestros egresados</p>
-    <div class="logos-track">
-      <div class="logos-inner">
-        <span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>Uber</span><span>Spotify</span><span>Amazon</span><span>Rappi</span><span>Clip</span>
-        <span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>Uber</span><span>Spotify</span><span>Amazon</span><span>Rappi</span><span>Clip</span>
-      </div>
+  <!-- SOCIAL PROOF NUMBERS -->
+  <section class="numbers-strip">
+    <div class="numbers-inner">
+      <div class="num-item"><span class="num-val" data-target="42000">0</span><span class="num-suf">+</span><span class="num-label">Estudiantes activos</span></div>
+      <div class="num-div"></div>
+      <div class="num-item"><span class="num-val" data-target="400">0</span><span class="num-suf">+</span><span class="num-label">Programas disponibles</span></div>
+      <div class="num-div"></div>
+      <div class="num-item"><span class="num-val" data-target="98">0</span><span class="num-suf">%</span><span class="num-label">Tasa de satisfacción</span></div>
+      <div class="num-div"></div>
+      <div class="num-item"><span class="num-val" data-target="87">0</span><span class="num-suf">%</span><span class="num-label">Mejoran su posición laboral</span></div>
+      <div class="num-div"></div>
+      <div class="num-item"><span class="num-val" data-target="15">0</span><span class="num-suf">+</span><span class="num-label">Países latinoamericanos</span></div>
     </div>
   </section>
 
-  <!-- ░░ CATEGORÍAS ░░ -->
-  <section class="section categories-section" id="categorias">
+  <!-- QUÉ INCLUYE -->
+  <section class="section" id="incluye">
     <div class="section-inner">
-      <div class="section-tag">Explora</div>
-      <h2 class="section-title">Todo lo que necesitas<br /><span class="gradient-text">en un solo lugar</span></h2>
-      <p class="section-sub">Desde programación hasta finanzas personales. Elige tu camino.</p>
-      <div class="categories-grid">
-        <div class="cat-card" data-color="#6C3CE1">
-          <div class="cat-icon">💻</div>
-          <h3>Tecnología</h3>
-          <p>Web, móvil, IA, datos y más</p>
-          <span class="cat-count">87 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
-        <div class="cat-card" data-color="#F97316">
-          <div class="cat-icon">📈</div>
-          <h3>Negocios</h3>
-          <p>Emprendimiento, marketing, ventas</p>
-          <span class="cat-count">64 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
-        <div class="cat-card" data-color="#EC4899">
-          <div class="cat-icon">🎨</div>
-          <h3>Diseño</h3>
-          <p>UI/UX, gráfico, motion, 3D</p>
-          <span class="cat-count">52 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
-        <div class="cat-card" data-color="#10B981">
-          <div class="cat-icon">💰</div>
-          <h3>Finanzas</h3>
-          <p>Inversión, criptos, ahorro</p>
-          <span class="cat-count">41 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
-        <div class="cat-card" data-color="#F59E0B">
-          <div class="cat-icon">🎬</div>
-          <h3>Contenido</h3>
-          <p>Video, foto, redes sociales</p>
-          <span class="cat-count">38 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
-        <div class="cat-card" data-color="#3B82F6">
-          <div class="cat-icon">🧠</div>
-          <h3>Idiomas</h3>
-          <p>Inglés, francés, alemán, más</p>
-          <span class="cat-count">29 cursos</span>
-          <div class="cat-arrow">→</div>
-        </div>
+      <div class="section-tag">¿Qué incluye?</div>
+      <h2 class="section-title">Todo lo que necesitas para <em class="gold-italic">crecer profesionalmente</em></h2>
+      <p class="section-sub">Una plataforma completa. No solo videos — un ecosistema de crecimiento ejecutivo.</p>
+      <div class="includes-grid">
+        <div class="inc-card reveal"><div class="inc-icon">🎓</div><h3>+400 Cursos HD</h3><p>Programas grabados por ejecutivos activos de Google, Mercado Libre, BBVA y más. Actualizados cada trimestre.</p><div class="inc-tag">Incluido</div></div>
+        <div class="inc-card reveal"><div class="inc-icon">📜</div><h3>Certificados Avalados</h3><p>Certificaciones digitales verificables, reconocidas por más de 300 empresas líderes en México y LATAM.</p><div class="inc-tag">Incluido</div></div>
+        <div class="inc-card reveal"><div class="inc-icon">🧑‍💼</div><h3>Mentoría en Vivo</h3><p>Sesiones mensuales en vivo con expertos del sector. Haz tus preguntas y recibe feedback real.</p><div class="inc-tag">Pro</div></div>
+        <div class="inc-card reveal"><div class="inc-icon">🤝</div><h3>Red de Ejecutivos</h3><p>Comunidad privada de más de 42,000 profesionistas. Networking real que abre puertas.</p><div class="inc-tag">Incluido</div></div>
+        <div class="inc-card reveal"><div class="inc-icon">📱</div><h3>App Móvil + Offline</h3><p>Aprende desde cualquier lugar. Descarga lecciones para verlas sin internet en iOS y Android.</p><div class="inc-tag">Incluido</div></div>
+        <div class="inc-card reveal"><div class="inc-icon">🗂️</div><h3>Rutas de Aprendizaje</h3><p>Programas estructurados de 3 a 6 meses diseñados para cada perfil: directivo, emprendedor o especialista.</p><div class="inc-tag">Incluido</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ░░ CURSOS DESTACADOS ░░ -->
-  <section class="section courses-section" id="cursos">
+  <!-- PARA QUIÉN -->
+  <section class="section section-dark" id="para-quien">
     <div class="section-inner">
-      <div class="section-tag">Populares</div>
-      <h2 class="section-title">Cursos más <span class="gradient-text">solicitados</span></h2>
-      <div class="courses-tabs">
-        <button class="tab active" data-tab="all">Todos</button>
-        <button class="tab" data-tab="tech">Tecnología</button>
-        <button class="tab" data-tab="biz">Negocios</button>
-        <button class="tab" data-tab="design">Diseño</button>
-      </div>
-      <div class="courses-grid" id="coursesGrid">
-
-        <div class="course-card" data-cat="tech">
-          <div class="course-thumb" style="background: linear-gradient(135deg,#6C3CE1,#3B82F6)">
-            <span class="course-emoji">⚛️</span>
-            <div class="course-level">Intermedio</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>React</span><span>JavaScript</span></div>
-            <h3>Desarrollo Web con React 18</h3>
-            <p>Domina el framework más popular del mundo con proyectos reales.</p>
-            <div class="course-meta">
-              <span>⭐ 4.9 <em>(2.1k)</em></span>
-              <span>📹 42 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#6C3CE1">JR</div>
-                <span>Jorge Ramírez</span>
-              </div>
-              <div class="course-price">
-                <del>$899</del>
-                <strong>$499</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card featured" data-cat="tech">
-          <div class="featured-label">🔥 Más popular</div>
-          <div class="course-thumb" style="background: linear-gradient(135deg,#F97316,#EC4899)">
-            <span class="course-emoji">🤖</span>
-            <div class="course-level">Todos los niveles</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>IA</span><span>Python</span></div>
-            <h3>Inteligencia Artificial Práctica</h3>
-            <p>Crea tu primer modelo de IA desde cero. Sin fórmulas intimidantes.</p>
-            <div class="course-meta">
-              <span>⭐ 4.8 <em>(3.4k)</em></span>
-              <span>📹 58 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#F97316">AM</div>
-                <span>Ana Martínez</span>
-              </div>
-              <div class="course-price">
-                <del>$1,299</del>
-                <strong>$699</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card" data-cat="biz">
-          <div class="course-thumb" style="background: linear-gradient(135deg,#10B981,#3B82F6)">
-            <span class="course-emoji">📊</span>
-            <div class="course-level">Básico</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>Marketing</span><span>Redes</span></div>
-            <h3>Marketing Digital desde Cero</h3>
-            <p>Estrategias reales para crecer en redes y conseguir clientes.</p>
-            <div class="course-meta">
-              <span>⭐ 4.7 <em>(1.8k)</em></span>
-              <span>📹 35 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#10B981">LC</div>
-                <span>Laura Cruz</span>
-              </div>
-              <div class="course-price">
-                <del>$799</del>
-                <strong>$399</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card" data-cat="design">
-          <div class="course-thumb" style="background: linear-gradient(135deg,#EC4899,#F97316)">
-            <span class="course-emoji">🎨</span>
-            <div class="course-level">Intermedio</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>UI/UX</span><span>Figma</span></div>
-            <h3>Diseño UI/UX Profesional</h3>
-            <p>De wireframes a prototipos de alta fidelidad con Figma.</p>
-            <div class="course-meta">
-              <span>⭐ 4.9 <em>(1.2k)</em></span>
-              <span>📹 47 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#EC4899">MV</div>
-                <span>Miguel Vargas</span>
-              </div>
-              <div class="course-price">
-                <del>$999</del>
-                <strong>$549</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card" data-cat="biz">
-          <div class="course-thumb" style="background: linear-gradient(135deg,#F59E0B,#F97316)">
-            <span class="course-emoji">💼</span>
-            <div class="course-level">Avanzado</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>Finanzas</span><span>Inversión</span></div>
-            <h3>Finanzas Personales e Inversión</h3>
-            <p>Construye tu patrimonio desde cero con estrategias probadas.</p>
-            <div class="course-meta">
-              <span>⭐ 4.8 <em>(940)</em></span>
-              <span>📹 31 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#F59E0B">RP</div>
-                <span>Roberto Peña</span>
-              </div>
-              <div class="course-price">
-                <del>$1,099</del>
-                <strong>$599</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card" data-cat="tech">
-          <div class="course-thumb" style="background: linear-gradient(135deg,#3B82F6,#6C3CE1)">
-            <span class="course-emoji">☁️</span>
-            <div class="course-level">Intermedio</div>
-          </div>
-          <div class="course-body">
-            <div class="course-tags"><span>AWS</span><span>DevOps</span></div>
-            <h3>Cloud Computing con AWS</h3>
-            <p>Certificación AWS Solutions Architect — guía completa paso a paso.</p>
-            <div class="course-meta">
-              <span>⭐ 4.9 <em>(2.7k)</em></span>
-              <span>📹 63 lecciones</span>
-            </div>
-            <div class="course-footer">
-              <div class="course-instructor">
-                <div class="ins-avatar" style="background:#3B82F6">CF</div>
-                <span>Carlos Flores</span>
-              </div>
-              <div class="course-price">
-                <del>$1,499</del>
-                <strong>$799</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="courses-cta">
-        <a href="#" class="btn-primary btn-lg">Ver todos los cursos →</a>
+      <div class="section-tag">¿Es para ti?</div>
+      <h2 class="section-title">Diseñado para profesionistas <em class="gold-italic">que van en serio</em></h2>
+      <div class="profiles-grid">
+        <div class="profile-card reveal"><div class="profile-icon">💼</div><h3>El Profesionista Ambicioso</h3><p>Tienes entre 5 y 15 años de experiencia y quieres dar el salto a un puesto directivo. Buscas habilidades reales, no teoría.</p><div class="profile-check">Este programa es para ti →</div></div>
+        <div class="profile-card profile-featured reveal"><div class="profile-star">★ Perfil más común</div><div class="profile-icon">🚀</div><h3>El Emprendedor en Crecimiento</h3><p>Tienes un negocio o estás lanzando uno. Necesitas finanzas, marketing, ventas y liderazgo — todo en un solo lugar.</p><div class="profile-check">Este programa es para ti →</div></div>
+        <div class="profile-card reveal"><div class="profile-icon">🌐</div><h3>El Especialista Técnico</h3><p>Eres experto en tu área pero quieres desarrollar visión de negocio, habilidades blandas y mayor impacto organizacional.</p><div class="profile-check">Este programa es para ti →</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ░░ FEATURES ░░ -->
-  <section class="section features-section">
-    <div class="section-inner features-inner">
-      <div class="features-text">
-        <div class="section-tag">¿Por qué nosotros?</div>
-        <h2 class="section-title">Aprende de manera<br /><span class="gradient-text">diferente</span></h2>
-        <p class="section-sub">No somos otra plataforma de videos. Somos tu comunidad de aprendizaje.</p>
-        <div class="features-list">
-          <div class="feat-item reveal">
-            <div class="feat-icon" style="background: rgba(108,60,225,0.15); color:#6C3CE1">🎯</div>
-            <div>
-              <h4>Aprende a tu ritmo</h4>
-              <p>Acceso de por vida. Empieza cuando quieras, pausa cuando necesites.</p>
-            </div>
-          </div>
-          <div class="feat-item reveal">
-            <div class="feat-icon" style="background: rgba(249,115,22,0.15); color:#F97316">🏆</div>
-            <div>
-              <h4>Certificados reconocidos</h4>
-              <p>Certificados que validan tu habilidad ante reclutadores reales.</p>
-            </div>
-          </div>
-          <div class="feat-item reveal">
-            <div class="feat-icon" style="background: rgba(236,72,153,0.15); color:#EC4899">🤝</div>
-            <div>
-              <h4>Comunidad activa</h4>
-              <p>Foros, Discord y sesiones en vivo con instructores y peers.</p>
-            </div>
-          </div>
-          <div class="feat-item reveal">
-            <div class="feat-icon" style="background: rgba(16,185,129,0.15); color:#10B981">📱</div>
-            <div>
-              <h4>Aprende en cualquier dispositivo</h4>
-              <p>App iOS y Android con modo sin conexión para aprender en el metro.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="features-visual">
-        <div class="phone-mockup glass-card">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="app-header">
-              <span>Mi aprendizaje</span>
-              <div class="app-avatar"></div>
-            </div>
-            <div class="app-progress-card">
-              <div class="apc-emoji">⚛️</div>
-              <div class="apc-info">
-                <strong>React 18</strong>
-                <div class="apc-bar"><div class="apc-fill" style="width:72%"></div></div>
-                <span>Módulo 7 de 10</span>
-              </div>
-            </div>
-            <div class="app-streak">
-              <span>🔥</span>
-              <div>
-                <strong>12 días seguidos</strong>
-                <small>¡Tu mejor racha!</small>
-              </div>
-            </div>
-            <div class="app-next">
-              <div class="next-label">Siguiente lección</div>
-              <div class="next-item">
-                <span>▶</span>
-                <div>
-                  <strong>Hooks avanzados</strong>
-                  <small>18 min</small>
-                </div>
-              </div>
-            </div>
-            <div class="app-nav">
-              <span>🏠</span><span>📚</span><span class="nav-active">🎯</span><span>👤</span>
-            </div>
-          </div>
-        </div>
-        <div class="floating-stat glass-card">
-          <div class="fs-number">12 días</div>
-          <div class="fs-label">de racha 🔥</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ INSTRUCTORES ░░ -->
-  <section class="section instructors-section" id="instructores">
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonios">
     <div class="section-inner">
-      <div class="section-tag">Expertos reales</div>
-      <h2 class="section-title">Aprende de los <span class="gradient-text">mejores</span></h2>
-      <p class="section-sub">Nuestros instructores trabajan en las mejores empresas del mundo.</p>
-      <div class="instructors-grid">
-        <div class="instructor-card glass-card reveal">
-          <div class="ins-photo" style="background: linear-gradient(135deg,#6C3CE1,#3B82F6)">JR</div>
-          <h4>Jorge Ramírez</h4>
-          <span class="ins-role">Senior Engineer @ Google</span>
-          <p>10 años construyendo productos usados por millones.</p>
-          <div class="ins-stats"><span>⭐ 4.9</span><span>12k alumnos</span></div>
-        </div>
-        <div class="instructor-card glass-card reveal">
-          <div class="ins-photo" style="background: linear-gradient(135deg,#F97316,#EC4899)">AM</div>
-          <h4>Ana Martínez</h4>
-          <span class="ins-role">AI Researcher @ Meta</span>
-          <p>Investigadora con 15 papers publicados en machine learning.</p>
-          <div class="ins-stats"><span>⭐ 4.8</span><span>18k alumnos</span></div>
-        </div>
-        <div class="instructor-card glass-card reveal">
-          <div class="ins-photo" style="background: linear-gradient(135deg,#10B981,#3B82F6)">LC</div>
-          <h4>Laura Cruz</h4>
-          <span class="ins-role">Head of Growth @ Rappi</span>
-          <p>Escaló el crecimiento de Rappi en 3 países latinoamericanos.</p>
-          <div class="ins-stats"><span>⭐ 4.7</span><span>9k alumnos</span></div>
-        </div>
-        <div class="instructor-card glass-card reveal">
-          <div class="ins-photo" style="background: linear-gradient(135deg,#EC4899,#F97316)">MV</div>
-          <h4>Miguel Vargas</h4>
-          <span class="ins-role">Design Lead @ Spotify</span>
-          <p>Diseñó interfaces para 400M de usuarios activos mensuales.</p>
-          <div class="ins-stats"><span>⭐ 4.9</span><span>7k alumnos</span></div>
-        </div>
+      <div class="section-tag">Casos de éxito</div>
+      <h2 class="section-title">Ejecutivos reales. <em class="gold-italic">Resultados reales.</em></h2>
+      <p class="section-sub">No vendemos promesas. Vendemos transformaciones documentadas.</p>
+      <div class="testi-grid">
+        <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Tomé el programa de Finanzas para Directivos y en 6 meses me dieron una promoción con 35% más de salario. El ROI fue inmediato."</p><div class="testi-author"><div class="testi-av" style="background:linear-gradient(135deg,#C9A028,#8B6914)">CM</div><div><strong>Carlos Mendoza</strong><span>Director Financiero · Grupo Coppel</span></div></div></div>
+        <div class="testi-card testi-featured reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Llegué sin saber nada de marketing digital. Hoy dirijo el equipo de growth de una startup con 3 millones de usuarios. Mundo Academy fue el punto de inflexión."</p><div class="testi-author"><div class="testi-av" style="background:linear-gradient(135deg,#C9A028,#F0C040)">SR</div><div><strong>Sofía Ruiz</strong><span>Head of Growth · Startup GDL</span></div></div><div class="testi-result">+180% crecimiento en su área</div></div>
+        <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Como emprendedor, el módulo de ventas B2B transformó mi negocio. Pasé de $80K a $340K mensuales en menos de un año."</p><div class="testi-author"><div class="testi-av" style="background:linear-gradient(135deg,#8B6914,#C9A028)">RP</div><div><strong>Roberto Peña</strong><span>CEO · Agencia Digital MTY</span></div></div></div>
+      </div>
+      <div class="logos-section">
+        <p class="logos-label">Nuestros egresados trabajan en</p>
+        <div class="logos-track"><div class="logos-inner"><span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>BBVA</span><span>Rappi</span><span>Amazon</span><span>Cemex</span><span>Santander</span><span>Clip</span><span>Kavak</span><span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>BBVA</span><span>Rappi</span><span>Amazon</span><span>Cemex</span><span>Santander</span><span>Clip</span><span>Kavak</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ░░ TESTIMONIOS ░░ -->
-  <section class="section testimonials-section" id="testimonios">
+  <!-- OFERTA -->
+  <section class="section section-offer" id="oferta">
+    <div class="offer-bg"><div class="orb orb-offer1"></div><div class="orb orb-offer2"></div></div>
     <div class="section-inner">
-      <div class="section-tag">Historias reales</div>
-      <h2 class="section-title">Lo que dicen nuestros <span class="gradient-text">estudiantes</span></h2>
-      <div class="testimonials-grid">
-        <div class="testi-card glass-card reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Pasé de no saber nada de programación a conseguir mi primer trabajo como desarrollador en 6 meses. Mundo Academy cambió mi vida."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#6C3CE1,#3B82F6)">DL</div>
-            <div>
-              <strong>Diego López</strong>
-              <span>Dev Jr. @ Clip · CDMX</span>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card glass-card reveal testi-featured">
-          <div class="stars">★★★★★</div>
-          <p>"La calidad de los instructores es increíble. Aprendí más en 3 meses aquí que en 2 años de universidad. Los proyectos son de nivel profesional real."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#F97316,#EC4899)">SP</div>
-            <div>
-              <strong>Sofía Pedraza</strong>
-              <span>UX Designer @ BBVA · MTY</span>
-            </div>
-          </div>
-        </div>
-        <div class="testi-card glass-card reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Hice el curso de finanzas y literalmente en 2 meses ya estaba invirtiendo con confianza. Mi portafolio subió 18% en el primer año."</p>
-          <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#10B981,#3B82F6)">KR</div>
-            <div>
-              <strong>Karen Reyes</strong>
-              <span>Contadora independiente · GDL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ PRECIOS ░░ -->
-  <section class="section pricing-section" id="precios">
-    <div class="section-inner">
-      <div class="section-tag">Planes</div>
-      <h2 class="section-title">Invierte en ti,<br /><span class="gradient-text">sin límites</span></h2>
-      <p class="section-sub">Sin contratos. Cancela cuando quieras.</p>
+      <div class="section-tag">Oferta especial</div>
+      <h2 class="section-title">Elige tu plan. <em class="gold-italic">Empieza hoy.</em></h2>
+      <div class="offer-countdown-bar"><span>⏱ Esta oferta expira en:</span><span class="ocd-timer" id="offerTimer">23:47:12</span></div>
       <div class="pricing-grid">
-        <div class="pricing-card glass-card reveal">
-          <div class="price-name">Básico</div>
-          <div class="price-amount"><span>$</span>199<span>/mes</span></div>
-          <ul class="price-features">
-            <li>✓ 50 cursos incluidos</li>
-            <li>✓ Certificados básicos</li>
-            <li>✓ Acceso a comunidad</li>
-            <li class="muted">✗ Proyectos con mentores</li>
-            <li class="muted">✗ Sesiones en vivo</li>
-          </ul>
-          <a href="#" class="btn-ghost btn-full">Comenzar gratis</a>
-        </div>
-        <div class="pricing-card glass-card pricing-popular reveal">
-          <div class="popular-tag">🔥 Más elegido</div>
-          <div class="price-name">Pro</div>
-          <div class="price-amount"><span>$</span>399<span>/mes</span></div>
-          <ul class="price-features">
-            <li>✓ Todos los cursos (+400)</li>
-            <li>✓ Certificados premium</li>
-            <li>✓ Comunidad VIP</li>
-            <li>✓ Proyectos con mentores</li>
-            <li>✓ Sesiones en vivo mensuales</li>
-          </ul>
-          <a href="#" class="btn-primary btn-full">Comenzar ahora</a>
-        </div>
-        <div class="pricing-card glass-card reveal">
-          <div class="price-name">Empresas</div>
-          <div class="price-amount price-custom">Custom</div>
-          <ul class="price-features">
-            <li>✓ Licencias múltiples</li>
-            <li>✓ Dashboard de equipo</li>
-            <li>✓ Cursos personalizados</li>
-            <li>✓ Soporte dedicado</li>
-            <li>✓ Reportes de progreso</li>
-          </ul>
-          <a href="#" class="btn-ghost btn-full">Contactar ventas</a>
-        </div>
+        <div class="price-card reveal"><div class="pc-name">Ejecutivo</div><div class="pc-price"><span class="pc-old">$599</span><span class="pc-amount"><span>$</span>299</span><span class="pc-period">/mes</span></div><div class="pc-desc">Para profesionistas que quieren crecer a su ritmo.</div><ul class="pc-features"><li><span class="check">✓</span> Acceso a +400 cursos</li><li><span class="check">✓</span> Certificados avalados</li><li><span class="check">✓</span> App móvil + offline</li><li><span class="check">✓</span> Comunidad de ejecutivos</li><li><span class="cross">✗</span> Mentoría en vivo</li><li><span class="cross">✗</span> Rutas personalizadas</li></ul><a href="#" class="btn-outline-gold btn-full">Comenzar plan Ejecutivo</a><p class="pc-note">Cancela cuando quieras</p></div>
+        <div class="price-card price-featured reveal"><div class="pc-popular">🔥 Más elegido</div><div class="pc-name">Pro Ejecutivo</div><div class="pc-price"><span class="pc-old">$1,199</span><span class="pc-amount"><span>$</span>599</span><span class="pc-period">/mes</span></div><div class="pc-desc">Para ejecutivos que quieren resultados rápidos y acompañamiento real.</div><ul class="pc-features"><li><span class="check">✓</span> Todo lo del plan Ejecutivo</li><li><span class="check">✓</span> Mentoría en vivo mensual</li><li><span class="check">✓</span> Rutas personalizadas</li><li><span class="check">✓</span> Sesiones de networking</li><li><span class="check">✓</span> Certificado Pro avalado</li><li><span class="check">✓</span> Soporte prioritario 24/7</li></ul><a href="#" class="btn-gold btn-full btn-lg">Quiero el plan Pro →</a><p class="pc-note">Garantía de devolución 7 días</p></div>
+        <div class="price-card reveal"><div class="pc-name">Empresas</div><div class="pc-price"><span class="pc-amount-custom">A medida</span></div><div class="pc-desc">Para equipos de 5 personas o más que quieren crecer juntos.</div><ul class="pc-features"><li><span class="check">✓</span> Licencias múltiples</li><li><span class="check">✓</span> Dashboard de equipo</li><li><span class="check">✓</span> Cursos personalizados</li><li><span class="check">✓</span> Reportes de progreso</li><li><span class="check">✓</span> Account manager dedicado</li><li><span class="check">✓</span> Facturación corporativa</li></ul><a href="#" class="btn-outline-gold btn-full">Hablar con ventas</a><p class="pc-note">Cotización sin compromiso</p></div>
+      </div>
+      <div class="guarantee-bar reveal"><div class="gb-icon">🛡️</div><div><strong>Garantía de satisfacción total — 7 días</strong><p>Si en los primeros 7 días no estás 100% satisfecho, te devolvemos tu dinero. Sin preguntas. Sin letra chica.</p></div></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-inner">
+      <div class="section-tag">Preguntas frecuentes</div>
+      <h2 class="section-title">Resolvemos tus <em class="gold-italic">dudas</em></h2>
+      <div class="faq-list">
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">¿En cuánto tiempo veo resultados?<span class="faq-icon">+</span></button><div class="faq-a"><p>La mayoría de nuestros estudiantes reportan cambios tangibles en su desempeño laboral en los primeros 60-90 días. Los resultados varían según la dedicación, pero con 30-45 minutos diarios puedes completar un programa en 3 meses.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">¿Los certificados tienen validez oficial?<span class="faq-icon">+</span></button><div class="faq-a"><p>Nuestros certificados son avalados por instituciones educativas aliadas y reconocidos por más de 300 empresas en México y LATAM. Incluyen QR de verificación y son compatibles con LinkedIn.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">¿Puedo acceder desde cualquier dispositivo?<span class="faq-icon">+</span></button><div class="faq-a"><p>Sí. La plataforma funciona en web (cualquier navegador) y tienes app para iOS y Android. Puedes descargar lecciones para verlas sin internet.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">¿Qué pasa si cancelo mi suscripción?<span class="faq-icon">+</span></button><div class="faq-a"><p>Puedes cancelar en cualquier momento desde tu perfil, sin penalizaciones. Mantienes acceso hasta el fin de tu periodo pagado. No hay contratos de permanencia.</p></div></div>
+        <div class="faq-item reveal"><button class="faq-q" aria-expanded="false">¿Hay soporte en español?<span class="faq-icon">+</span></button><div class="faq-a"><p>Totalmente. Todo el contenido está en español y nuestro equipo de soporte atiende en español de lunes a sábado de 8am a 10pm hora CDMX.</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ░░ CTA FINAL ░░ -->
-  <section class="cta-section">
-    <div class="cta-bg">
-      <div class="orb orb-cta1"></div>
-      <div class="orb orb-cta2"></div>
-    </div>
-    <div class="cta-content">
-      <h2>Tu próxima versión<br /><span class="gradient-text">empieza hoy.</span></h2>
-      <p>Únete a más de 42,000 estudiantes que ya están transformando su carrera.</p>
-      <div class="cta-actions">
-        <a href="#" class="btn-hero-primary">Crear cuenta gratis</a>
-        <a href="#" class="btn-hero-ghost">Ver planes →</a>
-      </div>
-      <p class="cta-note">Sin tarjeta de crédito · Cancela cuando quieras</p>
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="fcta-bg"><div class="orb orb-fcta1"></div><div class="orb orb-fcta2"></div></div>
+    <div class="fcta-inner">
+      <div class="fcta-tag">Última oportunidad</div>
+      <h2 class="fcta-title">El mejor momento para invertir<br />en ti fue ayer.<br /><em class="gold-italic">El segundo mejor momento es ahora.</em></h2>
+      <p class="fcta-sub">42,000+ ejecutivos ya tomaron la decisión. ¿Qué estás esperando?</p>
+      <a href="#oferta" class="btn-hero-gold btn-hero-xl">Inscribirme con descuento hoy<svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+      <div class="fcta-trust"><span>🛡️ Garantía 7 días</span><span>·</span><span>📱 Acceso inmediato</span><span>·</span><span>🏆 Certificado incluido</span><span>·</span><span>❌ Sin contratos</span></div>
     </div>
   </section>
 
-  <!-- ░░ FOOTER ░░ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-icon">◈</span>
-          <span class="logo-text">Mundo<strong>Academy</strong></span>
-        </a>
-        <p>Plataforma de aprendizaje online líder en México. Cursos, certificaciones y comunidad.</p>
+        <a href="#" class="logo"><span class="logo-icon">◈</span><span class="logo-text">Mundo<strong>Academy</strong></span></a>
+        <p>La plataforma de formación ejecutiva líder en México. Cursos, certificaciones y comunidad para profesionistas que van en serio.</p>
         <div class="social-links">
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" aria-label="Twitter/X">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-          </a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
         </div>
       </div>
       <div class="footer-links">
-        <div class="footer-col">
-          <h5>Plataforma</h5>
-          <a href="#">Explorar cursos</a>
-          <a href="#">Rutas de aprendizaje</a>
-          <a href="#">Certificaciones</a>
-          <a href="#">Instructores</a>
-          <a href="#">App móvil</a>
-        </div>
-        <div class="footer-col">
-          <h5>Empresa</h5>
-          <a href="#">Nosotros</a>
-          <a href="#">Blog</a>
-          <a href="#">Trabaja con nosotros</a>
-          <a href="#">Prensa</a>
-          <a href="#">Afiliados</a>
-        </div>
-        <div class="footer-col">
-          <h5>Soporte</h5>
-          <a href="#">Centro de ayuda</a>
-          <a href="#">Contacto</a>
-          <a href="#">Términos de uso</a>
-          <a href="#">Privacidad</a>
-          <a href="#">Cookies</a>
-        </div>
+        <div class="footer-col"><h5>Plataforma</h5><a href="#">Explorar cursos</a><a href="#">Certificaciones</a><a href="#">Rutas ejecutivas</a><a href="#">Mentoría</a><a href="#">App móvil</a></div>
+        <div class="footer-col"><h5>Empresa</h5><a href="#">Nosotros</a><a href="#">Blog ejecutivo</a><a href="#">Trabaja con nosotros</a><a href="#">Empresas</a><a href="#">Afiliados</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="#">Términos de uso</a><a href="#">Política de privacidad</a><a href="#">Garantía de devolución</a><a href="#">Contacto</a></div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2024 Mundo Academy · Hecho con ❤️ en México 🇲🇽</span>
-      <span>mundoacademy.com.mx</span>
-    </div>
+    <div class="footer-bottom"><span>© 2024 Mundo Academy · Hecho con ❤️ en México 🇲🇽</span><span>mundoacademy.com.mx</span></div>
   </footer>
 
   <script src="script.js"></script>
