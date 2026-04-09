@@ -3,516 +3,320 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mundo Academy – Formación Ejecutiva Online</title>
-  <meta name="description" content="La plataforma de formación ejecutiva líder en México. Cursos de negocios, liderazgo y tecnología con certificados que abren puertas." />
+  <title>Mundo Academy – Formación Ejecutiva</title>
+  <meta name="description" content="Cursos ejecutivos para empresarios, directores y emprendedores. Aprende negocio real con formación aplicada y seria." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-icon">◈</span>
-        <span class="logo-text">Mundo<strong>Academy</strong></span>
+  <header class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="#" class="brand">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">Mundo <strong>Academy</strong></span>
       </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#incluye">Qué incluye</a>
-        <a href="#testimonios">Casos de éxito</a>
-        <a href="#oferta">Oferta</a>
-        <a href="#faq">FAQ</a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#que-es">La academia</a>
+        <a href="#areas">Areas</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#para-quien">Para quien</a>
       </nav>
-      <div class="nav-actions">
-        <a href="#oferta" class="btn-gold">Inscribirme ahora →</a>
+      <div class="nav-cta">
+        <a href="#que-es" class="btn-outline-sm">Conocer mas</a>
+        <a href="#cursos" class="btn-gold-sm">Explorar cursos</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- URGENCY BAR -->
-  <div class="urgency-bar">
-    <span class="ub-dot"></span>
-    <span>Oferta de lanzamiento activa — quedan <strong id="spotsLeft">14</strong> lugares a precio especial</span>
-    <span class="ub-sep">|</span>
-    <span>Cierra en <strong id="countdown">23:47:12</strong></span>
-  </div>
-
   <!-- HERO -->
   <section class="hero">
-    <canvas id="particles"></canvas>
-    <div class="hero-orbs">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-    </div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="eyebrow-dot"></span>
-          Formación ejecutiva online · México
+    <div class="hero-wrap">
+      <div class="hero-left">
+        <div class="hero-kicker">Formacion ejecutiva &middot; Mundo Academy</div>
+        <h1 class="hero-h1">Conocimiento que<br /><em>mueve negocios.</em></h1>
+        <p class="hero-body">Cursos ejecutivos disenados para empresarios, directores y emprendedores que quieren tomar mejores decisiones, liderar con claridad y crecer con criterio.</p>
+        <div class="hero-actions">
+          <a href="#cursos" class="btn-primary">Explorar cursos</a>
+          <a href="#que-es" class="btn-text">Conocer la academia <span class="arrow">&rarr;</span></a>
         </div>
-        <h1 class="hero-title">
-          Transforma tu carrera<br />
-          con formación de<br />
-          <em class="gold-italic">nivel ejecutivo.</em>
-        </h1>
-        <p class="hero-sub">
-          Más de 400 programas diseñados para profesionistas que quieren crecer, liderar y ganar más. Aprendizaje 100% online, certificado y a tu ritmo.
-        </p>
-        <div class="hero-cta-block">
-          <a href="#oferta" class="btn-hero-gold">
-            Quiero inscribirme ahora
-            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-          </a>
-          <a href="#incluye" class="btn-outline-white">Ver qué incluye</a>
-        </div>
-        <div class="hero-trust">
-          <div class="trust-item">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Sin contrato
-          </div>
-          <div class="trust-item">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Acceso de por vida
-          </div>
-          <div class="trust-item">
-            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Garantía 7 días
-          </div>
+        <div class="hero-signals">
+          <div class="signal"><span class="sig-check">&#10003;</span> Contenido aplicado</div>
+          <div class="signal"><span class="sig-check">&#10003;</span> Expertos con trayectoria real</div>
+          <div class="signal"><span class="sig-check">&#10003;</span> Acceso inmediato</div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-card glass-gold">
-          <div class="hc-top">
-            <div class="hc-avatar"></div>
-            <div>
-              <div class="hc-name">Carlos Mendoza</div>
-              <div class="hc-role">Director Comercial · CDMX</div>
+      <div class="hero-right">
+        <div class="hero-card-main">
+          <div class="hcm-kicker">Curso destacado</div>
+          <div class="hcm-cat">Estrategia &middot; Avanzado</div>
+          <h3 class="hcm-title">Direccion Estrategica para el Empresario Moderno</h3>
+          <p class="hcm-desc">Frameworks reales para tomar decisiones estrategicas en entornos de alta incertidumbre.</p>
+          <div class="hcm-footer">
+            <div class="hcm-level"><span class="dot-gold"></span> Nivel directivo</div>
+            <a href="#" class="hcm-cta">Ver programa &rarr;</a>
+          </div>
+        </div>
+        <div class="hero-card-side hcs-left">
+          <div class="hcs-icon">&#9670;</div>
+          <div class="hcs-text"><strong>Respaldo editorial</strong><span>Universo Mundo Ejecutivo</span></div>
+        </div>
+        <div class="hero-card-side hcs-right">
+          <div class="hcs-icon">&#9654;</div>
+          <div class="hcs-text"><strong>Enfoque practico</strong><span>Orientado a negocio real</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDIBILITY BAR -->
+  <section class="cred-bar">
+    <div class="cred-wrap">
+      <div class="cred-item">
+        <div class="cred-icon">&#9734;</div>
+        <div><strong>Legado editorial</strong><p>Respaldado por el universo Mundo Ejecutivo, referencia de negocios en Mexico</p></div>
+      </div>
+      <div class="cred-div"></div>
+      <div class="cred-item">
+        <div class="cred-icon">&#9635;</div>
+        <div><strong>Contenido curado</strong><p>Cada curso pasa por un proceso de validacion ejecutiva antes de publicarse</p></div>
+      </div>
+      <div class="cred-div"></div>
+      <div class="cred-item">
+        <div class="cred-icon">&#9655;</div>
+        <div><strong>Enfoque practico</strong><p>Formacion orientada a decisiones reales, no a teoria abstracta</p></div>
+      </div>
+      <div class="cred-div"></div>
+      <div class="cred-item">
+        <div class="cred-icon">&#9671;</div>
+        <div><strong>Instruccion con experiencia</strong><p>Aprendes de personas que han construido y dirigido organizaciones reales</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUE ES -->
+  <section class="section" id="que-es">
+    <div class="section-wrap two-col">
+      <div class="col-text reveal">
+        <div class="s-kicker">La academia</div>
+        <h2 class="s-title">Una propuesta seria de<br /><em>educacion ejecutiva.</em></h2>
+        <p class="s-body">Mundo Academy es la plataforma de cursos ejecutivos del universo Mundo Ejecutivo. No somos un catalogo generico de contenidos. Somos una propuesta curada, pensada para personas que dirigen, deciden y construyen organizaciones.</p>
+        <p class="s-body">Cada programa esta disenado con criterio empresarial: contenido aplicado, instructores con experiencia real y un enfoque que te ayuda a pensar mejor, gestionar mejor y crecer mejor.</p>
+        <a href="#cursos" class="btn-primary mt">Ver la oferta academica</a>
+      </div>
+      <div class="col-visual reveal">
+        <div class="about-visual">
+          <div class="av-block av-top">
+            <div class="av-label">Areas de formacion</div>
+            <div class="av-tags">
+              <span>Liderazgo</span><span>Estrategia</span><span>Finanzas</span>
+              <span>Ventas</span><span>Marketing</span><span>Innovacion</span>
             </div>
-            <div class="hc-badge">✓ Certificado</div>
           </div>
-          <div class="hc-quote">"Subí mi sueldo 40% en 8 meses después de completar el programa de liderazgo."</div>
-          <div class="hc-stars">★★★★★</div>
-        </div>
-        <div class="hero-card-small glass-gold" style="top:10px;right:-24px">
-          <div class="hcs-icon">🏆</div>
-          <div>
-            <div class="hcs-val">+42,000</div>
-            <div class="hcs-label">ejecutivos formados</div>
-          </div>
-        </div>
-        <div class="hero-card-small glass-gold" style="bottom:30px;left:-20px">
-          <div class="hcs-icon">📈</div>
-          <div>
-            <div class="hcs-val">87%</div>
-            <div class="hcs-label">mejoran su posición</div>
+          <div class="av-block av-bottom">
+            <div class="av-quote">&ldquo;Formacion que se traduce en mejores decisiones de negocio.&rdquo;</div>
+            <div class="av-attr">&mdash; Filosofia Mundo Academy</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SOCIAL PROOF NUMBERS -->
-  <section class="numbers-strip">
-    <div class="numbers-inner">
-      <div class="num-item">
-        <span class="num-val" data-target="42000">0</span><span class="num-suf">+</span>
-        <span class="num-label">Estudiantes activos</span>
+  <!-- PROPUESTA DE VALOR -->
+  <section class="section section-gray" id="valor">
+    <div class="section-wrap">
+      <div class="s-header reveal">
+        <div class="s-kicker">Por que importa</div>
+        <h2 class="s-title">Lo que obtienes con<br /><em>cada curso.</em></h2>
       </div>
-      <div class="num-div"></div>
-      <div class="num-item">
-        <span class="num-val" data-target="400">0</span><span class="num-suf">+</span>
-        <span class="num-label">Programas disponibles</span>
-      </div>
-      <div class="num-div"></div>
-      <div class="num-item">
-        <span class="num-val" data-target="98">0</span><span class="num-suf">%</span>
-        <span class="num-label">Tasa de satisfacción</span>
-      </div>
-      <div class="num-div"></div>
-      <div class="num-item">
-        <span class="num-val" data-target="87">0</span><span class="num-suf">%</span>
-        <span class="num-label">Mejoran su posición laboral</span>
-      </div>
-      <div class="num-div"></div>
-      <div class="num-item">
-        <span class="num-val" data-target="15">0</span><span class="num-suf">+</span>
-        <span class="num-label">Países latinoamericanos</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUÉ INCLUYE -->
-  <section class="section" id="incluye">
-    <div class="section-inner">
-      <div class="section-tag">¿Qué incluye?</div>
-      <h2 class="section-title">Todo lo que necesitas para <em class="gold-italic">crecer profesionalmente</em></h2>
-      <p class="section-sub">Una plataforma completa. No solo videos — un ecosistema de crecimiento ejecutivo.</p>
-      <div class="includes-grid">
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">🎓</div>
-          <h3>+400 Cursos HD</h3>
-          <p>Programas grabados por ejecutivos activos de Google, Mercado Libre, BBVA y más. Actualizados cada trimestre.</p>
-          <div class="inc-tag">Incluido</div>
+      <div class="benefits-grid">
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9632;</div>
+          <h3>Formacion ejecutiva aplicada</h3>
+          <p>Contenido disenado para ser usado, no solo escuchado. Cada modulo conecta con decisiones reales.</p>
         </div>
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">📜</div>
-          <h3>Certificados Avalados</h3>
-          <p>Certificaciones digitales verificables, reconocidas por más de 300 empresas líderes en México y LATAM.</p>
-          <div class="inc-tag">Incluido</div>
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9633;</div>
+          <h3>Expertos con trayectoria real</h3>
+          <p>Aprende de personas que han dirigido equipos, construido empresas y tomado las decisiones que tu estas tomando ahora.</p>
         </div>
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">🧑‍💼</div>
-          <h3>Mentoría en Vivo</h3>
-          <p>Sesiones mensuales en vivo con expertos del sector. Haz tus preguntas y recibe feedback real.</p>
-          <div class="inc-tag">Pro</div>
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9654;</div>
+          <h3>Contenido curado con criterio</h3>
+          <p>No publicamos todo lo que llega. Cada programa pasa por un filtro editorial riguroso antes de llegar a ti.</p>
         </div>
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">🤝</div>
-          <h3>Red de Ejecutivos</h3>
-          <p>Comunidad privada de más de 42,000 profesionistas. Networking real que abre puertas.</p>
-          <div class="inc-tag">Incluido</div>
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9670;</div>
+          <h3>Vision real de negocio</h3>
+          <p>Mas alla de la teoria: frameworks, herramientas y perspectivas que funcionan en la practica empresarial.</p>
         </div>
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">📱</div>
-          <h3>App Móvil + Offline</h3>
-          <p>Aprende desde cualquier lugar. Descarga lecciones para verlas sin internet en iOS y Android.</p>
-          <div class="inc-tag">Incluido</div>
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9655;</div>
+          <h3>Aprendizaje flexible</h3>
+          <p>Estudia a tu ritmo. Accede cuando y donde necesites, sin perder la profundidad del contenido.</p>
         </div>
-
-        <div class="inc-card reveal">
-          <div class="inc-icon">🗂️</div>
-          <h3>Rutas de Aprendizaje</h3>
-          <p>Programas estructurados de 3 a 6 meses diseñados para cada perfil: directivo, emprendedor o especialista.</p>
-          <div class="inc-tag">Incluido</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA QUIÉN -->
-  <section class="section section-dark" id="para-quien">
-    <div class="section-inner">
-      <div class="section-tag">¿Es para ti?</div>
-      <h2 class="section-title">Diseñado para profesionistas <em class="gold-italic">que van en serio</em></h2>
-      <div class="profiles-grid">
-        <div class="profile-card reveal">
-          <div class="profile-icon">💼</div>
-          <h3>El Profesionista Ambicioso</h3>
-          <p>Tienes entre 5 y 15 años de experiencia y quieres dar el salto a un puesto directivo. Buscas habilidades reales, no teoría.</p>
-          <div class="profile-check">Este programa es para ti →</div>
-        </div>
-        <div class="profile-card profile-featured reveal">
-          <div class="profile-star">★ Perfil más común</div>
-          <div class="profile-icon">🚀</div>
-          <h3>El Emprendedor en Crecimiento</h3>
-          <p>Tienes un negocio o estás lanzando uno. Necesitas finanzas, marketing, ventas y liderazgo — todo en un solo lugar.</p>
-          <div class="profile-check">Este programa es para ti →</div>
-        </div>
-        <div class="profile-card reveal">
-          <div class="profile-icon">🌐</div>
-          <h3>El Especialista Técnico</h3>
-          <p>Eres experto en tu área pero quieres desarrollar visión de negocio, habilidades blandas y mayor impacto organizacional.</p>
-          <div class="profile-check">Este programa es para ti →</div>
+        <div class="ben-card reveal">
+          <div class="ben-icon">&#9678;</div>
+          <h3>Certificacion con respaldo</h3>
+          <p>Cada curso completado se certifica bajo el sello Mundo Academy, con respaldo editorial reconocido.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- AREAS -->
+  <section class="section" id="areas">
+    <div class="section-wrap">
+      <div class="s-header reveal">
+        <div class="s-kicker">Areas de aprendizaje</div>
+        <h2 class="s-title">Formacion en lo que<br /><em>realmente importa.</em></h2>
+        <p class="s-sub">Programas organizados por las disciplinas fundamentales del liderazgo empresarial moderno.</p>
+      </div>
+      <div class="areas-grid">
+        <div class="area-card reveal"><div class="area-num">01</div><h3>Liderazgo</h3><p>Direccion de equipos, cultura organizacional, toma de decisiones y gestion del desempeno.</p><span class="area-link">Ver cursos &rarr;</span></div>
+        <div class="area-card reveal"><div class="area-num">02</div><h3>Estrategia</h3><p>Planeacion estrategica, modelos de negocio, posicionamiento competitivo y crecimiento.</p><span class="area-link">Ver cursos &rarr;</span></div>
+        <div class="area-card reveal"><div class="area-num">03</div><h3>Ventas y Comercial</h3><p>Metodologias de venta, gestion comercial, construccion de canales y relacion con clientes.</p><span class="area-link">Ver cursos &rarr;</span></div>
+        <div class="area-card reveal"><div class="area-num">04</div><h3>Marketing</h3><p>Estrategia de marca, posicionamiento, marketing digital y comunicacion ejecutiva.</p><span class="area-link">Ver cursos &rarr;</span></div>
+        <div class="area-card reveal"><div class="area-num">05</div><h3>Finanzas</h3><p>Finanzas para no financieros, analisis de rentabilidad, flujo de caja y decision de inversion.</p><span class="area-link">Ver cursos &rarr;</span></div>
+        <div class="area-card reveal"><div class="area-num">06</div><h3>Crecimiento e Innovacion</h3><p>Escalamiento de negocios, innovacion aplicada y nuevos modelos de creacion de valor.</p><span class="area-link">Ver cursos &rarr;</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS DESTACADOS -->
+  <section class="section section-gray" id="cursos">
+    <div class="section-wrap">
+      <div class="s-header reveal">
+        <div class="s-kicker">Programas destacados</div>
+        <h2 class="s-title">Cursos para quienes<br /><em>piensan en grande.</em></h2>
+        <p class="s-sub">Una seleccion de nuestros programas mas reconocidos.</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card reveal">
+          <div class="cc-header cc-h1"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Estrategia</span><span class="cc-lvl">Directivo</span></div><h3>Direccion Estrategica Empresarial</h3><p>Aprende a formular, ejecutar y revisar estrategias en contextos de alta complejidad y cambio constante.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+        <div class="course-card course-featured reveal">
+          <div class="cc-header cc-h2"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Liderazgo</span><span class="cc-lvl">Todos los niveles</span></div><h3>Liderazgo de Alto Impacto</h3><p>Desarrolla las habilidades que separan a los lideres efectivos: comunicacion, influencia y decision bajo presion.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+        <div class="course-card reveal">
+          <div class="cc-header cc-h3"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Finanzas</span><span class="cc-lvl">Ejecutivo</span></div><h3>Finanzas para Directivos</h3><p>Domina los indicadores clave, la lectura financiera y las decisiones de inversion sin ser contador.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+        <div class="course-card reveal">
+          <div class="cc-header cc-h4"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Ventas</span><span class="cc-lvl">Avanzado</span></div><h3>Gestion Comercial Avanzada</h3><p>Construye y escala equipos de ventas de alto desempeno con metodologias probadas.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+        <div class="course-card reveal">
+          <div class="cc-header cc-h5"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Marketing</span><span class="cc-lvl">Estrategico</span></div><h3>Estrategia de Marca y Posicionamiento</h3><p>Define y comunica el valor diferencial de tu empresa con una estrategia de marca solida.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+        <div class="course-card reveal">
+          <div class="cc-header cc-h6"></div>
+          <div class="cc-body"><div class="cc-meta"><span class="cc-cat-tag">Innovacion</span><span class="cc-lvl">Fundadores</span></div><h3>Escalamiento de Negocios</h3><p>Aprende a pasar de startup a empresa consolidada con estructuras y decisiones que escalan.</p><a href="#" class="cc-cta">Ver programa &rarr;</a></div>
+        </div>
+      </div>
+      <div class="courses-footer reveal"><a href="#" class="btn-primary">Ver todos los programas</a></div>
+    </div>
+  </section>
+
+  <!-- POR QUE ES DIFERENTE -->
+  <section class="section" id="diferente">
+    <div class="section-wrap two-col col-flip">
+      <div class="col-visual reveal">
+        <div class="diff-visual">
+          <div class="dv-row"><div class="dv-check">&#10003;</div><span>Formacion pensada para quien dirige, no para quien empieza</span></div>
+          <div class="dv-row"><div class="dv-check">&#10003;</div><span>Instructores seleccionados por trayectoria, no por popularidad</span></div>
+          <div class="dv-row"><div class="dv-check">&#10003;</div><span>Cada curso tiene un objetivo de negocio claro, no solo de aprendizaje</span></div>
+          <div class="dv-row"><div class="dv-check">&#10003;</div><span>Sello editorial del universo Mundo Ejecutivo</span></div>
+          <div class="dv-row"><div class="dv-check">&#10003;</div><span>Sin relleno, sin teoria abstracta, sin contenido generico</span></div>
+        </div>
+      </div>
+      <div class="col-text reveal">
+        <div class="s-kicker">Nuestra diferencia</div>
+        <h2 class="s-title">No somos otro<br /><em>catalogo de cursos.</em></h2>
+        <p class="s-body">Mundo Academy existe porque la mayoria de las plataformas de cursos online no estan disenadas para el perfil ejecutivo. Son masivas, genericas y desconectadas de la realidad empresarial.</p>
+        <p class="s-body">Nosotros seleccionamos, curamos y disenamos cada programa con un unico criterio: que te ayude a dirigir mejor y a tomar decisiones mas inteligentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIEN -->
+  <section class="section section-gray" id="para-quien">
+    <div class="section-wrap">
+      <div class="s-header reveal">
+        <div class="s-kicker">Para quien</div>
+        <h2 class="s-title">Disenado para quienes<br /><em>construyen y dirigen.</em></h2>
+      </div>
+      <div class="for-grid">
+        <div class="for-card reveal"><div class="for-num">01</div><h3>Empresarios</h3><p>Duenos de negocio que quieren profesionalizar su gestion, mejorar sus decisiones y crecer con mas estructura.</p></div>
+        <div class="for-card reveal"><div class="for-num">02</div><h3>Directores y Ejecutivos</h3><p>Lideres que quieren ampliar su vision, fortalecer sus competencias y estar a la vanguardia del management.</p></div>
+        <div class="for-card reveal"><div class="for-num">03</div><h3>Emprendedores</h3><p>Fundadores que necesitan pasar de modo operativo a modo estrategico y escalar con criterio.</p></div>
+        <div class="for-card reveal"><div class="for-num">04</div><h3>Profesionistas en Ascenso</h3><p>Ejecutivos que buscan desarrollar vision directiva, habilidades de liderazgo y pensamiento estrategico.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
   <section class="section" id="testimonios">
-    <div class="section-inner">
-      <div class="section-tag">Casos de éxito</div>
-      <h2 class="section-title">Ejecutivos reales. <em class="gold-italic">Resultados reales.</em></h2>
-      <p class="section-sub">No vendemos promesas. Vendemos transformaciones documentadas.</p>
-
+    <div class="section-wrap">
+      <div class="s-header reveal">
+        <div class="s-kicker">Perspectivas reales</div>
+        <h2 class="s-title">Lo que dicen quienes<br /><em>ya estudian con nosotros.</em></h2>
+      </div>
       <div class="testi-grid">
-        <div class="testi-card reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">"Tomé el programa de Finanzas para Directivos y en 6 meses me dieron una promoción con 35% más de salario. El ROI fue inmediato."</p>
-          <div class="testi-author">
-            <div class="testi-av" style="background:linear-gradient(135deg,#C9A028,#8B6914)">CM</div>
-            <div>
-              <strong>Carlos Mendoza</strong>
-              <span>Director Financiero · Grupo Coppel</span>
-            </div>
-          </div>
+        <div class="testi reveal">
+          <div class="testi-bar"></div>
+          <div class="testi-quote">&ldquo;El curso de Direccion Estrategica me ayudo a replantear como pienso el crecimiento de mi empresa. No fue teoria: fue un cambio de perspectiva real.&rdquo;</div>
+          <div class="testi-person"><div class="tp-init">RV</div><div><strong>Ricardo V.</strong><span>Director General, empresa de servicios industriales</span></div></div>
         </div>
-
-        <div class="testi-card testi-featured reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">"Llegué sin saber nada de marketing digital. Hoy dirijo el equipo de growth de una startup con 3 millones de usuarios. Mundo Academy fue el punto de inflexión."</p>
-          <div class="testi-author">
-            <div class="testi-av" style="background:linear-gradient(135deg,#C9A028,#F0C040)">SR</div>
-            <div>
-              <strong>Sofía Ruiz</strong>
-              <span>Head of Growth · Startup GDL</span>
-            </div>
-          </div>
-          <div class="testi-result">+180% crecimiento en su área</div>
+        <div class="testi testi-mid reveal">
+          <div class="testi-bar"></div>
+          <div class="testi-quote">&ldquo;Llevaba anos posponiendo formarme en finanzas. El programa de Mundo Academy es exactamente lo que necesitaba: claro, directo y aplicable desde el primer modulo.&rdquo;</div>
+          <div class="testi-person"><div class="tp-init">AP</div><div><strong>Ana P.</strong><span>Fundadora, agencia de marketing boutique</span></div></div>
         </div>
-
-        <div class="testi-card reveal">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-quote">"Como emprendedor, el módulo de ventas B2B transformó mi negocio. Pasé de $80K a $340K mensuales en menos de un año."</p>
-          <div class="testi-author">
-            <div class="testi-av" style="background:linear-gradient(135deg,#8B6914,#C9A028)">RP</div>
-            <div>
-              <strong>Roberto Peña</strong>
-              <span>CEO · Agencia Digital MTY</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Logos strip -->
-      <div class="logos-section">
-        <p class="logos-label">Nuestros egresados trabajan en</p>
-        <div class="logos-track">
-          <div class="logos-inner">
-            <span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>BBVA</span><span>Rappi</span><span>Amazon</span><span>Cemex</span><span>Santander</span><span>Clip</span><span>Kavak</span>
-            <span>Google</span><span>Microsoft</span><span>Mercado Libre</span><span>BBVA</span><span>Rappi</span><span>Amazon</span><span>Cemex</span><span>Santander</span><span>Clip</span><span>Kavak</span>
-          </div>
+        <div class="testi reveal">
+          <div class="testi-bar"></div>
+          <div class="testi-quote">&ldquo;La calidad del contenido y el nivel de los instructores esta por encima de lo que esperaba. Se nota que hay un criterio editorial serio detras.&rdquo;</div>
+          <div class="testi-person"><div class="tp-init">JM</div><div><strong>Jorge M.</strong><span>CEO, grupo de restaurantes</span></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- OFERTA -->
-  <section class="section section-offer" id="oferta">
-    <div class="offer-bg">
-      <div class="orb orb-offer1"></div>
-      <div class="orb orb-offer2"></div>
-    </div>
-    <div class="section-inner">
-      <div class="section-tag">Oferta especial</div>
-      <h2 class="section-title">Elige tu plan. <em class="gold-italic">Empieza hoy.</em></h2>
-      <div class="offer-countdown-bar">
-        <span>⏱ Esta oferta expira en:</span>
-        <span class="ocd-timer" id="offerTimer">23:47:12</span>
-      </div>
-
-      <div class="pricing-grid">
-
-        <!-- Plan Básico -->
-        <div class="price-card reveal">
-          <div class="pc-name">Ejecutivo</div>
-          <div class="pc-price">
-            <span class="pc-old">$599</span>
-            <span class="pc-amount"><span>$</span>299</span>
-            <span class="pc-period">/mes</span>
-          </div>
-          <div class="pc-desc">Para profesionistas que quieren crecer a su ritmo.</div>
-          <ul class="pc-features">
-            <li><span class="check">✓</span> Acceso a +400 cursos</li>
-            <li><span class="check">✓</span> Certificados avalados</li>
-            <li><span class="check">✓</span> App móvil + offline</li>
-            <li><span class="check">✓</span> Comunidad de ejecutivos</li>
-            <li><span class="cross">✗</span> Mentoría en vivo</li>
-            <li><span class="cross">✗</span> Rutas personalizadas</li>
-          </ul>
-          <a href="#" class="btn-outline-gold btn-full">Comenzar plan Ejecutivo</a>
-          <p class="pc-note">Cancela cuando quieras</p>
-        </div>
-
-        <!-- Plan Pro (destacado) -->
-        <div class="price-card price-featured reveal">
-          <div class="pc-popular">🔥 Más elegido</div>
-          <div class="pc-name">Pro Ejecutivo</div>
-          <div class="pc-price">
-            <span class="pc-old">$1,199</span>
-            <span class="pc-amount"><span>$</span>599</span>
-            <span class="pc-period">/mes</span>
-          </div>
-          <div class="pc-desc">Para ejecutivos que quieren resultados rápidos y acompañamiento real.</div>
-          <ul class="pc-features">
-            <li><span class="check">✓</span> Todo lo del plan Ejecutivo</li>
-            <li><span class="check">✓</span> Mentoría en vivo mensual</li>
-            <li><span class="check">✓</span> Rutas personalizadas</li>
-            <li><span class="check">✓</span> Sesiones de networking</li>
-            <li><span class="check">✓</span> Certificado Pro avalado</li>
-            <li><span class="check">✓</span> Soporte prioritario 24/7</li>
-          </ul>
-          <a href="#" class="btn-gold btn-full btn-lg">Quiero el plan Pro →</a>
-          <p class="pc-note">Garantía de devolución 7 días</p>
-        </div>
-
-        <!-- Plan Empresas -->
-        <div class="price-card reveal">
-          <div class="pc-name">Empresas</div>
-          <div class="pc-price">
-            <span class="pc-amount-custom">A medida</span>
-          </div>
-          <div class="pc-desc">Para equipos de 5 personas o más que quieren crecer juntos.</div>
-          <ul class="pc-features">
-            <li><span class="check">✓</span> Licencias múltiples</li>
-            <li><span class="check">✓</span> Dashboard de equipo</li>
-            <li><span class="check">✓</span> Cursos personalizados</li>
-            <li><span class="check">✓</span> Reportes de progreso</li>
-            <li><span class="check">✓</span> Account manager dedicado</li>
-            <li><span class="check">✓</span> Facturación corporativa</li>
-          </ul>
-          <a href="#" class="btn-outline-gold btn-full">Hablar con ventas</a>
-          <p class="pc-note">Cotización sin compromiso</p>
-        </div>
-
-      </div>
-
-      <!-- Garantía -->
-      <div class="guarantee-bar reveal">
-        <div class="gb-icon">🛡️</div>
-        <div>
-          <strong>Garantía de satisfacción total — 7 días</strong>
-          <p>Si en los primeros 7 días no estás 100% satisfecho, te devolvemos tu dinero. Sin preguntas. Sin letra chica.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="section-inner">
-      <div class="section-tag">Preguntas frecuentes</div>
-      <h2 class="section-title">Resolvemos tus <em class="gold-italic">dudas</em></h2>
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            ¿En cuánto tiempo veo resultados?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>La mayoría de nuestros estudiantes reportan cambios tangibles en su desempeño laboral en los primeros 60-90 días. Los resultados varían según la dedicación, pero con 30-45 minutos diarios puedes completar un programa en 3 meses.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            ¿Los certificados tienen validez oficial?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Nuestros certificados son avalados por instituciones educativas aliadas y reconocidos por más de 300 empresas en México y LATAM. Incluyen QR de verificación y son compatibles con LinkedIn.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            ¿Puedo acceder desde cualquier dispositivo?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Sí. La plataforma funciona en web (cualquier navegador) y tienes app para iOS y Android. Puedes descargar lecciones para verlas sin internet.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            ¿Qué pasa si cancelo mi suscripción?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Puedes cancelar en cualquier momento desde tu perfil, sin penalizaciones. Mantienes acceso hasta el fin de tu periodo pagado. No hay contratos de permanencia.</p>
-          </div>
-        </div>
-        <div class="faq-item reveal">
-          <button class="faq-q" aria-expanded="false">
-            ¿Hay soporte en español?
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-a">
-            <p>Totalmente. Todo el contenido está en español y nuestro equipo de soporte atiende en español de lunes a sábado de 8am a 10pm hora CDMX.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="final-cta">
-    <div class="fcta-bg">
-      <div class="orb orb-fcta1"></div>
-      <div class="orb orb-fcta2"></div>
-    </div>
-    <div class="fcta-inner">
-      <div class="fcta-tag">Última oportunidad</div>
-      <h2 class="fcta-title">
-        El mejor momento para invertir<br />
-        en ti fue ayer.<br />
-        <em class="gold-italic">El segundo mejor momento es ahora.</em>
-      </h2>
-      <p class="fcta-sub">42,000+ ejecutivos ya tomaron la decisión. ¿Qué estás esperando?</p>
-      <a href="#oferta" class="btn-hero-gold btn-hero-xl">
-        Inscribirme con descuento hoy
-        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-      </a>
-      <div class="fcta-trust">
-        <span>🛡️ Garantía 7 días</span>
-        <span>·</span>
-        <span>📱 Acceso inmediato</span>
-        <span>·</span>
-        <span>🏆 Certificado incluido</span>
-        <span>·</span>
-        <span>❌ Sin contratos</span>
+  <!-- CTA FINAL -->
+  <section class="section-cta">
+    <div class="cta-wrap">
+      <div class="s-kicker cta-kicker reveal">Empieza ahora</div>
+      <h2 class="cta-title reveal">El conocimiento que te falta<br /><em>ya esta aqui.</em></h2>
+      <p class="cta-body reveal">Explora la oferta academica de Mundo Academy y encuentra el programa que impulsa tu proxima etapa de crecimiento.</p>
+      <div class="cta-actions reveal">
+        <a href="#cursos" class="btn-primary btn-lg">Explorar cursos</a>
+        <a href="#que-es" class="btn-text">Conocer la academia <span class="arrow">&rarr;</span></a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="footer-top">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-icon">◈</span>
-          <span class="logo-text">Mundo<strong>Academy</strong></span>
-        </a>
-        <p>La plataforma de formación ejecutiva líder en México. Cursos, certificaciones y comunidad para profesionistas que van en serio.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-          </a>
-        </div>
+        <a href="#" class="brand"><span class="brand-mark">M</span><span class="brand-name">Mundo <strong>Academy</strong></span></a>
+        <p>Formacion ejecutiva para empresarios, directores y emprendedores que quieren crecer con criterio.</p>
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h5>Plataforma</h5>
-          <a href="#">Explorar cursos</a>
-          <a href="#">Certificaciones</a>
-          <a href="#">Rutas ejecutivas</a>
-          <a href="#">Mentoría</a>
-          <a href="#">App móvil</a>
-        </div>
-        <div class="footer-col">
-          <h5>Empresa</h5>
-          <a href="#">Nosotros</a>
-          <a href="#">Blog ejecutivo</a>
-          <a href="#">Trabaja con nosotros</a>
-          <a href="#">Empresas</a>
-          <a href="#">Afiliados</a>
-        </div>
-        <div class="footer-col">
-          <h5>Legal</h5>
-          <a href="#">Términos de uso</a>
-          <a href="#">Política de privacidad</a>
-          <a href="#">Garantía de devolución</a>
-          <a href="#">Contacto</a>
-        </div>
+      <div class="footer-nav">
+        <div class="fn-col"><h5>Academia</h5><a href="#que-es">Que es Mundo Academy</a><a href="#areas">Areas de aprendizaje</a><a href="#cursos">Cursos y programas</a><a href="#para-quien">Para quien</a></div>
+        <div class="fn-col"><h5>Empresa</h5><a href="#">Acerca de</a><a href="#">Mundo Ejecutivo</a><a href="#">Contacto</a><a href="#">Empresas y equipos</a></div>
+        <div class="fn-col"><h5>Legal</h5><a href="#">Terminos de uso</a><a href="#">Politica de privacidad</a><a href="#">Aviso legal</a></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2024 Mundo Academy · Hecho con ❤️ en México 🇲🇽</span>
+      <span>&copy; 2024 Mundo Academy. Todos los derechos reservados.</span>
       <span>mundoacademy.com.mx</span>
     </div>
   </footer>
