@@ -43,30 +43,23 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// ── Hero mouse parallax ────────────────────────────────────
-(function heroParallax() {
-  const hero = document.getElementById('hero');
-  if (!hero) return;
-  const watermark = hero.querySelector('.deco-watermark');
-  const vLine     = hero.querySelector('.deco-v');
-  const hLine     = hero.querySelector('.deco-h');
-  const ring      = hero.querySelector('.deco-ring');
+// ── Hero panel: subtle 3-D tilt on mouse ──────────────────
+(function heroPanelTilt() {
+  const panel = document.getElementById('heroPanel');
+  if (!panel) return;
+  const wrap = panel.parentElement;
 
-  hero.addEventListener('mousemove', e => {
-    const r = hero.getBoundingClientRect();
-    const x = (e.clientX - r.left  - r.width  / 2) / r.width;
-    const y = (e.clientY - r.top   - r.height / 2) / r.height;
-    if (watermark) watermark.style.transform = `translateY(calc(-50% + ${y * 14}px)) translateX(${x * 10}px)`;
-    if (vLine)     vLine.style.transform     = `translate(${x * -10}px, ${y * 18}px)`;
-    if (hLine)     hLine.style.transform     = `translate(${x * 22}px, ${y * -8}px)`;
-    if (ring)      ring.style.transform      = `translate(${x * -16}px, ${y * 12}px)`;
+  wrap.addEventListener('mousemove', e => {
+    const r = wrap.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width  / 2) / (r.width  / 2);
+    const y = (e.clientY - r.top  - r.height / 2) / (r.height / 2);
+    panel.style.transform = `perspective(900px) rotateY(${x * 5}deg) rotateX(${-y * 4}deg) translateY(-4px)`;
+    panel.style.transition = 'transform 0.12s ease';
   }, { passive: true });
 
-  hero.addEventListener('mouseleave', () => {
-    if (watermark) watermark.style.transform = '';
-    if (vLine)     vLine.style.transform     = '';
-    if (hLine)     hLine.style.transform     = '';
-    if (ring)      ring.style.transform      = '';
+  wrap.addEventListener('mouseleave', () => {
+    panel.style.transform  = '';
+    panel.style.transition = 'transform 0.6s cubic-bezier(0.22,1,0.36,1)';
   });
 })();
 
