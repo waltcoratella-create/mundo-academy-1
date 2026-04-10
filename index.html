@@ -72,101 +72,122 @@
       <!-- RIGHT: Executive Dashboard mockup -->
       <div class="hero-right fu fu-4">
         <div class="hero-panel" id="heroPanel">
-
-          <!-- Ambient glow -->
           <div class="panel-glow" aria-hidden="true"></div>
 
-          <!-- Top bar -->
+          <!-- Top bar: breadcrumb + avatars -->
           <div class="dp-topbar">
-            <div class="dp-brand">
-              <span class="dp-brand-m">M</span>
-              <span>Mundo Academy</span>
-            </div>
-            <div class="dp-session">
-              <span class="dp-dot"></span>
-              En sesion
-            </div>
-          </div>
-
-          <!-- Active course -->
-          <div class="dp-course">
-            <span class="dp-course-tag">Curso activo &middot; Estrategia</span>
-            <h4 class="dp-course-title">Direccion Estrategica<br />Empresarial</h4>
-            <div class="dp-prog-track"><div class="dp-prog-fill"></div></div>
-            <div class="dp-prog-row">
-              <span>62% completado</span>
-              <span>4 de 7 modulos</span>
-            </div>
-          </div>
-
-          <!-- Body: modules + KPI chart -->
-          <div class="dp-body">
-
-            <!-- Module list -->
-            <div class="dp-mods">
-              <div class="dp-sec-label">Modulos</div>
-              <div class="dp-mod dp-done">
-                <span class="dp-check">&#10003;</span>
-                <span class="dp-mname">Fundamentos estrategicos</span>
-              </div>
-              <div class="dp-mod dp-done">
-                <span class="dp-check">&#10003;</span>
-                <span class="dp-mname">Analisis competitivo</span>
-              </div>
-              <div class="dp-mod dp-active">
-                <span class="dp-play">&#9654;</span>
-                <span class="dp-mname">Toma de decisiones</span>
-                <span class="dp-pill">En curso</span>
-              </div>
-              <div class="dp-mod dp-locked">
-                <span class="dp-circle">&#9675;</span>
-                <span class="dp-mname">Liderazgo estrategico</span>
-              </div>
-            </div>
-
-            <!-- KPI chart -->
-            <div class="dp-kpi">
-              <div class="dp-sec-label">KPI Progreso</div>
-              <div class="dp-chart">
-                <svg viewBox="0 0 160 64" preserveAspectRatio="none" aria-hidden="true">
-                  <defs>
-                    <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#C8A96A" stop-opacity="0.3"/>
-                      <stop offset="100%" stop-color="#C8A96A" stop-opacity="0"/>
-                    </linearGradient>
-                  </defs>
-                  <polygon points="0,58 22,52 44,44 66,36 88,40 110,26 132,18 160,10 160,64 0,64" fill="url(#cg)"/>
-                  <polyline points="0,58 22,52 44,44 66,36 88,40 110,26 132,18 160,10" fill="none" stroke="#C8A96A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="132" cy="18" r="3" fill="#C8A96A"/>
-                  <circle cx="132" cy="18" r="7" fill="#C8A96A" fill-opacity="0.18"/>
+            <span class="dp-breadcrumb">ESTRATEGIA &middot; DIRECTIVO</span>
+            <div class="dp-avatars" aria-hidden="true">
+              <span class="dp-av dp-av-group">
+                <svg width="16" height="12" viewBox="0 0 20 14" fill="none">
+                  <circle cx="6" cy="5" r="3" fill="rgba(255,255,255,0.45)"/>
+                  <circle cx="14" cy="5" r="3" fill="rgba(255,255,255,0.45)"/>
+                  <path d="M0 14c0-3 2.7-5 6-5s6 2 6 5" fill="rgba(255,255,255,0.45)"/>
+                  <path d="M8 14c0-3 2.7-5 6-5s6 2 6 5" fill="rgba(255,255,255,0.45)"/>
                 </svg>
+              </span>
+              <span class="dp-av dp-av-user"></span>
+              <span class="dp-av dp-av-dots">&#8942;</span>
+            </div>
+          </div>
+
+          <!-- Main 2-column layout -->
+          <div class="dp-main">
+
+            <!-- LEFT: title, modules, progress, branding -->
+            <div class="dp-left">
+              <h4 class="dp-title">Direcci&oacute;n Estrat&eacute;gica Empresarial</h4>
+              <p class="dp-desc">Frameworks para tomar decisiones en entornos de alta complejidad.</p>
+
+              <div class="dp-mods">
+                <div class="dp-mod dp-done">
+                  <span class="dp-mod-icon">&#10003;</span>
+                  <span class="dp-mname">Fundamentos estrat&eacute;gicos</span>
+                  <span class="dp-mod-end">&#8964;</span>
+                </div>
+                <div class="dp-mod dp-avail">
+                  <span class="dp-mod-icon">&#9675;</span>
+                  <span class="dp-mname">Analisis competitivo</span>
+                  <span class="dp-mod-end">&#8964;</span>
+                </div>
+                <div class="dp-mod dp-active">
+                  <span class="dp-mod-num">01</span>
+                  <span class="dp-mname">Toma de decisiones</span>
+                  <span class="dp-mod-end">&rarr;</span>
+                </div>
+                <div class="dp-mod dp-locked">
+                  <span class="dp-mod-icon">&#9675;</span>
+                  <span class="dp-mname">Liderazgo estrat&eacute;gico</span>
+                  <span class="dp-mod-end">&#8942;</span>
+                </div>
               </div>
-              <div class="dp-metrics">
-                <div class="dp-metric">
-                  <span class="dp-mval">+24%</span>
-                  <span class="dp-mlabel">Estrategia</span>
-                </div>
-                <div class="dp-metric">
-                  <span class="dp-mval">+18%</span>
-                  <span class="dp-mlabel">Liderazgo</span>
-                </div>
-                <div class="dp-metric">
-                  <span class="dp-mval">87</span>
-                  <span class="dp-mlabel">Score</span>
-                </div>
+
+              <div class="dp-prog-bar">
+                <div class="dp-prog-track"><div class="dp-prog-fill"></div></div>
+              </div>
+
+              <div class="dp-brand-row">
+                <span class="dp-brand-m">M</span>
+                <span class="dp-brand-name">Mundo Academy</span>
               </div>
             </div>
 
-          </div>
+            <!-- RIGHT: KPI card + progress % card -->
+            <div class="dp-right">
+              <div class="dp-kpi-card">
+                <div class="dp-kpi-title">Crecimiento y KPIs empresariales</div>
+                <div class="dp-metrics">
+                  <div class="dp-metric">
+                    <span class="dp-mlabel">UTILIDAD</span>
+                    <span class="dp-mval">$100K</span>
+                  </div>
+                  <div class="dp-metric">
+                    <span class="dp-mlabel">INGRESOS DS</span>
+                    <span class="dp-mval">$850K</span>
+                  </div>
+                  <div class="dp-metric">
+                    <span class="dp-mlabel">% DE CRECIMIENTO</span>
+                    <span class="dp-mval">18%</span>
+                  </div>
+                </div>
+                <div class="dp-chart">
+                  <svg viewBox="0 0 280 100" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#C8A96A" stop-opacity="0.22"/>
+                        <stop offset="100%" stop-color="#C8A96A" stop-opacity="0.02"/>
+                      </linearGradient>
+                    </defs>
+                    <line x1="0" y1="25" x2="280" y2="25" stroke="rgba(200,169,106,0.1)" stroke-width="0.8"/>
+                    <line x1="0" y1="50" x2="280" y2="50" stroke="rgba(200,169,106,0.1)" stroke-width="0.8"/>
+                    <line x1="0" y1="75" x2="280" y2="75" stroke="rgba(200,169,106,0.1)" stroke-width="0.8"/>
+                    <polygon points="0,92 35,84 70,76 105,70 140,66 175,52 210,36 245,20 280,6 280,100 0,100" fill="url(#cg)"/>
+                    <polyline points="0,92 35,84 70,76 105,70 140,66 175,52 210,36 245,20 280,6" fill="none" stroke="#C8A96A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="0"   cy="92" r="2.5" fill="#C8A96A"/>
+                    <circle cx="35"  cy="84" r="2.5" fill="#C8A96A"/>
+                    <circle cx="70"  cy="76" r="2.5" fill="#C8A96A"/>
+                    <circle cx="105" cy="70" r="2.5" fill="#C8A96A"/>
+                    <circle cx="140" cy="66" r="2.5" fill="#C8A96A"/>
+                    <circle cx="175" cy="52" r="2.5" fill="#C8A96A"/>
+                    <circle cx="210" cy="36" r="2.5" fill="#C8A96A"/>
+                    <circle cx="245" cy="20" r="2.5" fill="#C8A96A"/>
+                    <circle cx="280" cy="6"  r="3.5" fill="#C8A96A"/>
+                    <circle cx="280" cy="6"  r="8"   fill="#C8A96A" fill-opacity="0.2"/>
+                  </svg>
+                </div>
+                <div class="dp-chart-labels">
+                  <span>Maro</span><span>Mar</span><span>Jun</span><span>Jun</span>
+                  <span>Agp</span><span>Jan</span><span>Sep</span><span>Set</span>
+                </div>
+              </div>
 
-          <!-- Footer -->
-          <div class="dp-footer">
-            <a href="#cursos" class="dp-cta">Continuar aprendizaje <span class="dp-arrow">&rarr;</span></a>
-            <div class="dp-certs">
-              <span class="dp-cert-icon">&#9670;</span>
-              2 certificados
+              <div class="dp-pct-card">
+                <div class="dp-pct-track"><div class="dp-pct-fill"></div></div>
+                <span class="dp-pct-num">62%</span>
+              </div>
             </div>
-          </div>
+
+          </div><!-- /dp-main -->
 
           <!-- Floating badges -->
           <div class="panel-badge badge-rating" aria-hidden="true">
